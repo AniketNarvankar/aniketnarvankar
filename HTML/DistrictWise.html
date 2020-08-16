@@ -1,0 +1,46 @@
+﻿<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<div ng-controller="districtWise" ng-hide="hide">
+    <ul class="breadcrumb" style="background-color:gray">
+        <li><input type="button" ng-click="back();" value="Back"/></li>
+    </ul>
+    <br />
+    <div class="container-fluid" ng-hide="hide">
+        <h1 class="h1" style="color:white">Covid 19 Tracker for {{State}} State District Wise</h1>
+    </div>
+    <br />
+    <div class="container-fluid" ng-hide="hide">
+        <div class="row">
+            <div class="col-sm">
+                <div class="table responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr style="background-color:midnightblue">
+                                <th style="color:white">State Code</th>
+                                <th style="color:white">District Name</th>
+                                <th style="color:white">Active Cases</th>
+                                <th style="color:white">Confirmed</th>
+                                <th style="color:white">Death</th>
+                                <th style="color:white">Recovered</th>
+                            </tr>
+                        </thead>
+                         
+                            <tr ng-repeat="district in district |filter:{stateName:State}">
+                                <td class="info">{{district.stateCode}}</td>
+                                <td class="info">{{district.districtName}}</td>
+                                <td class="danger">{{district.active}}</td>
+                                <td class="danger">{{district.confirmed}}</td>
+                                <td class="danger">{{district.deceased}}</td>
+                                <td class="success">{{district.recovered}}</td>
+                            </tr>
+                         
+                    </table>
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+<div ng-show="hide" ng-controller="districtWise" style="background-color:midnightblue">
+    <div class="container-fluid">
+        <h1 style="color:white">Error Fetching State Wise Data...</h1><input type="button" ng-click="back();" value="Click Here to go back to main page" />
+</div>
+</div>

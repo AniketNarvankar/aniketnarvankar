@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	 
+ 
+</head>
+<body ng-controller="covid19">
+    <p style="align-content:center"></p>
+    <ul class="breadcrumb" ng-hide="hide" style="background-color:gray">
+        <li><input type="button" ng-click="CovidInfo();" value="Preventive Measures" /></li>
+        <li><input type="button" ng-click="worldWise();" value="World Statistics" /></li>
+    </ul>
+    <br />
+    <div class="container-fluid" ng-hide="hide">
+        <h1 class="h1" style="color:white">Covid 19 Tracker For India</h1>
+    </div>
+    <br />
+    <div class="container-fluid" ng-hide="hide">
+        <div class="row">
+            <div class="col-sm">
+                <div class="table responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="background-color:darkgoldenrod;color:white">Active</th>
+                                <th style="background-color:royalblue;color:white">Confirmed</th>
+                                <th style="background-color:red;color:white">Deaths</th>
+                                <th style="background-color:forestgreen;color:white">Recovered</th>
+                            </tr>
+                        </thead>
+                         
+                            <tr ng-repeat="state in covid19Tracker.statewise | filter:{state: 'Total'}">
+                                <td class="info">{{state.active}}</td>
+                                <td class="info">{{state.confirmed}}</td>
+                                <td class="danger">{{state.deaths}}</td>
+                                <td class="success">{{state.recovered}}</td>
+                            </tr>
+                         
+                    </table>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <br />
+    <div ng-hide="hide" ng-repeat="state in covid19Tracker.statewise | filter:{state: 'Total'}">
+        <b style="color:white">Last Updated On : {{state.lastupdatedtime}}</b>
+    </div>
+    <br />
+    <div ng-hide="hide">
+        <b style="color:white">Click on Each Row to get State Data</b>
+    </div>
+    <br />
+    <div class="row" ng-hide="hide">
+       <div class="col-sm-6">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                             
+                            <th style="color:white">State Name</th>
+                            <th style="color:white">Active</th>
+                            <th style="color:white">Confirmed</th>
+                            <th style="color:white">Deaths</th>
+                            <th style="color:white">Recovered</th>
+                        </tr>
+                    </thead>
+
+                    <tr ng-repeat="state in covid19Tracker.statewise | filter:{state: '!Total'}" ng-click="getData(state.state)">
+                        <td class="success">{{state.state}}</td>
+                        <td class="info">{{state.active}}</td>
+                        <td class="info">{{state.confirmed}}</td>
+                        <td class="danger">{{state.deaths}}</td>
+                        <td class="success">{{state.recovered}}</td>
+                    <tr>
+                </table>
+            </div>
+       </div>
+       <br />
+        <div class="col-sm-6">
+        <div class="table" style="background-color:white">
+                <canvas tc-chartjs-line chart-data="data"
+                        chart-options="options" width="600"
+                        height="750"></canvas>
+                <br />
+                <canvas tc-chartjs-bar chart-data="dataWeekely"
+                        chart-options="optionsWeekely" width="600"
+                        height="300"></canvas>
+            </div>
+        </div>
+  </div>
+    <div class="container" ng-hide="hide">
+        <h1 class="h1" style="color:white">
+        Credits @ <a href="https://api.covid19india.org/" class="button" style="width:50px;height:50px;color:white" target="_blank">Covid 19 India</a> 
+        </h1>
+        <br />
+        <div style="text-align:center">
+            <input type="button" value="Refresh" ng-click="reloadData()" />
+        </div>
+    </div>
+    <br />
+    <div class="container-fluid" ng-show="hide">
+        <h1 style="color:white">Some Error Occured While Retrieving Data</h1>
+    </div>
+</body>
+</html>

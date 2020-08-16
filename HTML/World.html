@@ -1,0 +1,73 @@
+﻿<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<div ng-controller="worldController" ng-hide="hide">
+    <ul class="breadcrumb" style="background-color:gray">
+        <li><input type="button" ng-click="back();" value="Back" /></li>
+    </ul>
+    <br />
+    <div class="container-fluid">
+        <h1 class="h1" style="color:white">Covid 19 World Wide Statistics</h1>
+    </div>
+    <br />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <div class="table responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="background-color:royalblue;color:white">Confirmed</th>
+                                <th style="background-color:red;color:white">Deaths</th>
+                                <th style="background-color:forestgreen;color:white">Recovered</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td class="info">{{worldInfo.TotalConfirmed}}</td>
+                            <td class="danger">{{worldInfo.TotalDeaths}}</td>
+                            <td class="success">{{worldInfo.TotalRecovered}}</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="color:white">Country Name</th>
+                            <th style="color:white">Confirmed</th>
+                            <th style="color:white">Deaths</th>
+                            <th style="color:white">Recovered</th>
+                         </tr>
+                    </thead>
+
+                    <tr ng-repeat="data in dataCountryWise">
+                        <td class="success">{{data.Country}}</td>
+                        <td class="info">{{data.TotalConfirmed}}</td>
+                        <td class="danger">{{data.TotalDeaths}}</td>
+                        <td class="success">{{data.TotalRecovered}}</td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+
+            <div style="text-align:center;background-color:midnightblue">
+                <input type="button" value="Refresh" ng-click="reloadData()"/>
+            </div>
+        </div>    
+     </div>
+       
+</div>
+
+<div ng-controller="worldController" ng-show="hide" style="background-color:midnightblue">
+    <div class="container-fluid">
+        <h1 style="color:white">Error Fetching World Data...</h1><input type="button" ng-click="back();" value="Click Here to go back to main page" />
+    </div>
+</div>
+
+
+

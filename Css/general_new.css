@@ -1,0 +1,184 @@
+﻿@charset "utf-8";
+/* CSS Document */
+@import url(font-awesome.min.css);@import url(form.css);@import url(asserts/tabcollapse/tab_acc.css);
+body{background:#efefef;font-size:0.875em;}
+
+.primary_color{	background:#012d50;/*changable color*/}
+.primary_light{ background:#e3f2fd;}
+.primary_dark{ background:#001f34;}
+.primary_highlight_txt{ color:#f16e2d !important;}
+.overlay{width:100%; height:100%; z-index:10; position: fixed;display:none;}/* background-color:rgba(171,0,2,0.50); */
+
+/*(max-width: 600px)*/
+@media (max-width:767px)
+{
+	.hide_mob{ display:none !important;}
+	.w31p{ width:31% !important;}
+	.w68p{ width:60% !important;}
+	.w46p{ width:46% !important;}
+	.w70p{ width:70% !important;}
+	}
+
+@media (max-width:990px) and (min-width:767px)
+{
+	.hide_tab{ display:none !important;}
+	.visibel_tab{ display:inline;}
+	}	
+
+/*content*/
+.content {}
+.content .container-fulid{
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+	
+
+
+.supreme-container{}
+@media (max-width:767px)
+{
+	.supreme-container{ margin-top:130px;}
+}
+
+.primary_box{
+	/*background:#F49FC0 !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 
+    filter: alpha(opacity=50);  /* IE 5-7 
+    -moz-opacity: 0.1;          /* Netscape 
+    -khtml-opacity: 0.1;        /* Safari 1.x 
+    opacity: 0.1;               /* Good browsers 
+	z-index:-1 !important;*/
+	background-color:rgba(44,59,92,opacity option) !important;
+	}
+
+/*__changes 29th June __*/
+.header1{
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.19);
+	height:345px !important;
+	background-color:#fff;
+    }
+	
+.header2{
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.19);
+	height:148px !important;
+	background-color:#fff;
+    }
+	
+	
+.f8{
+	font-size:8px !important;
+	font-weight:normal !important;}
+/*__changes 29th June __*/
+
+	
+
+
+.page{
+	background-color: #fff;
+  padding: 19px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2px;
+  border: 0;
+}
+
+.button_nw{
+	
+	background-color:#012d50 !important;
+	color:#fff !important;
+	border-radius:6px !important;}
+	
+.button_nw:hover{
+	
+	background-color:#02467d !important;
+	color:#fff !important;
+	border-radius:6px !important;}
+	
+.button_grey{
+	background:#777 !important;
+	color:#fff !important;
+}
+
+.button_grey:hover{
+	background: #939393!important;
+	color:#fff !important;
+}
+
+.btn_info{background:#34495e!important;color:#fff !important;}
+.btn_info:hover{background:#667582 !important;color:#fff !important;}
+
+.modal-title{ color:#012d50 !important;}
+	
+/*margin*/
+.m0{ margin:0px !important;}
+.mt0{ margin-top:0px !important;}
+.mt2{ margin-top:2px;}
+.mt3{ margin-top:3px;}
+.mt4{ margin-top:4px;}
+.mt5{ margin-top:5px;}
+.mt6{ margin-top:6px;}
+.mt7{ margin-top:7px;}
+.mt8{ margin-top:8px;}
+.mt9{ margin-top:9px;}
+.mt10{ margin-top:10px;}
+.mt13{ margin-top:13px;}
+.mt15{ margin-top:15px;}
+.mt16{ margin-top:16px;}
+.mt20{ margin-top:20px;}
+.mt30{ margin-top:30px;}
+.mt40{ margin-top:40px !important;}
+.mr1{ margin-right:1px;}
+.mr5{ margin-right:5px;}
+.mr10{ margin-right:10px;}
+.mr15{ margin-right:15px !important;}
+.mr20{ margin-right:20px;}
+.mb0{ margin-bottom:0px !important;}
+.mb5{ margin-bottom:5px}
+.mb8{ margin-bottom:8px}
+.mb10{ margin-bottom:10px}
+.mb15{ margin-bottom:15px}
+.mb20{ margin-bottom:20px}
+.mb30{ margin-bottom:30px;}
+.mb45{ margin-bottom:45px !important;}
+.mb85{ margin-bottom:85px !important;}
+.ml0{ margin-left:0px;}
+.ml10{ margin-left:10px;}
+
+.pt15{ padding-top:15px;}
+.pb15{ padding-bottom:15px;}
+
+.negative{ 
+	color:#F30004 !important;}
+	
+.f9{
+	font-size:6px !important;
+	font-weight:normal !important;}
+	
+.f11{
+	font-size:11px !important;
+	font-weight:normal !important;}
+	
+.logo{
+	padding-top:10px;
+	padding-bottom:10px;
+	position:relative;}
+
+.logo img{
+	padding-left:15px;
+	padding-right:25px;
+	text-align:right !important;
+	}
+
+footer{
+	background-color:#DD1762;
+    box-shadow:0px 0 0px 0px rgba(0,0,0,1.0), 0px 0px 10px 0px rgba(0,0,0,0.19);
+	max-height:220px;
+	text-align:center !important;
+	color:#fff !important;
+	}
+
+.modal-dialog{
+    height: 550px;
+    overflow-y: scroll;
+     }

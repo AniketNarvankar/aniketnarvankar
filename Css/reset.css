@@ -1,0 +1,169 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+/* CSS Document */
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+	/*
+    font-size:100%;*/
+	line-height:21px;
+}
+
+body {
+    /*line-height:1;
+	line-height:1.313em;*/
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start:0px !important;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+a :hover{ text-decoration:none !important;}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*font family*/
+.robo{font-family:"Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;}
+.osw{font-family:"Oswald", Times New Roman, Cambria, Hoefler Text, Liberation Serif, Times, serif;}
+.robo_slab{font-family: 'Roboto Slab', serif;}
+
+
+@media (min-width:1300px) {
+.container {
+	/*width:95%;*/
+	width: 1270px
+}
+}
+@media (min-width:1300px) {
+.container-fluid {
+	/*width:95%;*/
+	width: 1270px
+}
+}
+
+ul{-webkit-margin-before: 0px;
+  -webkit-margin-after:  0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start:  0px;}
+ 
+ 
+  /*for scroll bar*/ 
+  ::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+ 
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(227,242,253,1.0); 
+   /* -webkit-border-radius: 10px;
+    border-radius: 10px;*/
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /*-webkit-border-radius: 10px;
+    border-radius: 10px;
+	 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	*/
+	background: rgba(1,45,80,0.8); 
+   
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(2,70,125,0.2); 
+}

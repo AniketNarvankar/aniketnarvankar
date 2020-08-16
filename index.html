@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html>
+<head>
+
+    <title>Covid Tracker</title>
+    <base href="/" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="expires" content="timestamp">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Add to Home">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <link href="css/app.css" rel="stylesheet" />
+    <script src="Scripts/angular.min.js" data-main="Scripts/main"></script>
+    <script src="Scripts/jquery.min.js" data-main="Scripts/main"></script>
+    <script src="Scripts/bootstrap.min.js" data-main="Scripts/main"></script>
+    <link href="Css/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/Chart.js" data-main="Scripts/main"></script>
+    <script src="Scripts/angular-chart.min.js" data-main="Scripts/main"></script>
+    <script src="Scripts/tc-angular-chartjs.js" data-main="Scripts/main"></script>
+    <script src="Scripts/require.js" data-main="Scripts/main"></script>
+
+
+</head>
+
+<body style="background-color:midnightblue">
+    <div ui-view>
+        <div align="center" style="display:block; margin:0 auto;padding-top: 10% !important;" class="img-responsive">
+            <img src="img/Loader.gif" />
+            <h2 style="color:white">Loading...Please wait...</h2>
+        </div>
+    </div>
+</body>
+</html>
