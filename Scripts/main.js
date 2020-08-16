@@ -32,10 +32,10 @@
         'BSMS': 'bootstrap-multiselect',
         'btorfs.multiselect': 'angular-bootstrap-multiselect',
         'tc.chartjs':'tc-angular-chartjs',
-        'Covid19': 'Dashboard/Covid19',
-        'DistrictWise': 'Dashboard/DistrictWise',
-        'worldData': 'Dashboard/worldData',
-        'covidInfo': 'Dashboard/covidInfo'
+        'Covid19': 'aniketnarvankar/Dashboard/Covid19',
+        'DistrictWise': 'aniketnarvankar/Dashboard/DistrictWise',
+        'worldData': 'aniketnarvankar/Dashboard/worldData',
+        'covidInfo': 'aniketnarvankar/Dashboard/covidInfo'
    },
     shim: {
         'ui-router': {
