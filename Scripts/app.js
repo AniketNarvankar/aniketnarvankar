@@ -117,19 +117,19 @@
 
         $stateProvider.state("Covid19", {
             url: "/Covid19",
-            templateUrl: 'HTML/Covid19.html',
+            templateUrl: 'aniketnarvankar/HTML/Covid19.html',
             controller: 'covid19'
         }).state("DistrictWise", {
             url: "/DistrictWise",
-            templateUrl: 'HTML/DistrictWise.html',
+            templateUrl: 'aniketnarvankar/HTML/DistrictWise.html',
             controller: 'districtWise'
         }).state("worldData", {
             url: "/worldData",
-            templateUrl: 'HTML/World.html',
+            templateUrl: 'aniketnarvankar/HTML/World.html',
             controller: 'worldController'
         }).state("covidInfo", {
             url: "/covidInfo",
-            templateUrl: 'HTML/covidInfo.html',
+            templateUrl: 'aniketnarvankar/HTML/covidInfo.html',
             controller: 'covidController'
         });
 
