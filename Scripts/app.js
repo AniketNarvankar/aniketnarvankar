@@ -1,1 +1,150 @@
- var _0xbea8=["\x75\x69\x2D\x72\x6F\x75\x74\x65\x72","\x6E\x67\x41\x6E\x69\x6D\x61\x74\x65","\x6E\x67\x53\x61\x6E\x69\x74\x69\x7A\x65","\x75\x69\x2E\x62\x6F\x6F\x74\x73\x74\x72\x61\x70","\x6E\x67\x4D\x65\x73\x73\x61\x67\x65\x73","\x6E\x67\x4D\x61\x74\x65\x72\x69\x61\x6C","\x6E\x67\x49\x64\x6C\x65","\x6E\x67\x41\x72\x69\x61","\x6E\x67\x54\x6F\x75\x63\x68","\x63\x72\x79\x70\x74\x6F\x6A\x73\x50\x72\x6F\x76\x69\x64\x65\x72","\x63\x67\x42\x75\x73\x79","\x4D\x61\x73\x73\x41\x75\x74\x6F\x43\x6F\x6D\x70\x6C\x65\x74\x65","\x62\x74\x6F\x72\x66\x73\x2E\x6D\x75\x6C\x74\x69\x73\x65\x6C\x65\x63\x74","\x6E\x67\x2E\x64\x65\x76\x69\x63\x65\x44\x65\x74\x65\x63\x74\x6F\x72","\x72\x65\x54\x72\x65\x65","\x74\x63\x2E\x63\x68\x61\x72\x74\x6A\x73","\x61\x70\x70","\x75\x69\x2E\x72\x6F\x75\x74\x65\x72","\x77\x74\x2E\x72\x65\x73\x70\x6F\x6E\x73\x69\x76\x65","\x6D\x6F\x64\x75\x6C\x65","\x69\x6E\x69\x74","\x62\x6F\x6F\x74\x73\x74\x72\x61\x70","\x70\x72\x65\x76\x69\x6F\x75\x73\x4C\x6F\x63\x61\x74\x69\x6F\x6E","","\x61\x63\x74\x75\x61\x6C\x4C\x6F\x63\x61\x74\x69\x6F\x6E","\x6F\x6E\x6C\x69\x6E\x65","\x6F\x6E\x4C\x69\x6E\x65","\x6F\x66\x66\x6C\x69\x6E\x65","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x63\x68\x65\x63\x6B\x43\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E","\x74\x79\x70\x65","\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E","\x55\x4E\x4B\x4E\x4F\x57\x4E","\x55\x6E\x6B\x6E\x6F\x77\x6E\x20\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E","\x45\x54\x48\x45\x52\x4E\x45\x54","\x45\x74\x68\x65\x72\x6E\x65\x74\x20\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E","\x57\x49\x46\x49","\x57\x69\x46\x69\x20\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E","\x43\x45\x4C\x4C\x5F\x32\x47","\x43\x65\x6C\x6C\x20\x32\x47\x20\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E","\x43\x45\x4C\x4C\x5F\x33\x47","\x43\x65\x6C\x6C\x20\x33\x47\x20\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E","\x43\x45\x4C\x4C\x5F\x34\x47","\x43\x65\x6C\x6C\x20\x34\x47\x20\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E","\x43\x45\x4C\x4C","\x43\x65\x6C\x6C\x20\x67\x65\x6E\x65\x72\x69\x63\x20\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E","\x4E\x4F\x4E\x45","\x4E\x6F\x20\x6E\x65\x74\x77\x6F\x72\x6B\x20\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E","\x24\x6C\x6F\x63\x61\x74\x69\x6F\x6E\x43\x68\x61\x6E\x67\x65\x53\x74\x61\x72\x74","\x70\x61\x74\x68","\x6C\x65\x6E\x67\x74\x68","\x77\x61\x74\x63\x68","\x72\x75\x6E","\x2F\x43\x6F\x76\x69\x64\x31\x39","\x6F\x74\x68\x65\x72\x77\x69\x73\x65","\x63\x6F\x76\x69\x64\x49\x6E\x66\x6F","\x2F\x63\x6F\x76\x69\x64\x49\x6E\x66\x6F","\x61\x6E\x69\x6B\x65\x74\x6E\x61\x72\x76\x61\x6E\x6B\x61\x72\x2F\x48\x54\x4D\x4C\x2F\x63\x6F\x76\x69\x64\x49\x6E\x66\x6F\x2E\x68\x74\x6D\x6C","\x63\x6F\x76\x69\x64\x43\x6F\x6E\x74\x72\x6F\x6C\x6C\x65\x72","\x73\x74\x61\x74\x65","\x77\x6F\x72\x6C\x64\x44\x61\x74\x61","\x2F\x77\x6F\x72\x6C\x64\x44\x61\x74\x61","\x61\x6E\x69\x6B\x65\x74\x6E\x61\x72\x76\x61\x6E\x6B\x61\x72\x2F\x48\x54\x4D\x4C\x2F\x57\x6F\x72\x6C\x64\x2E\x68\x74\x6D\x6C","\x77\x6F\x72\x6C\x64\x43\x6F\x6E\x74\x72\x6F\x6C\x6C\x65\x72","\x44\x69\x73\x74\x72\x69\x63\x74\x57\x69\x73\x65","\x2F\x44\x69\x73\x74\x72\x69\x63\x74\x57\x69\x73\x65","\x61\x6E\x69\x6B\x65\x74\x6E\x61\x72\x76\x61\x6E\x6B\x61\x72\x2F\x48\x54\x4D\x4C\x2F\x44\x69\x73\x74\x72\x69\x63\x74\x57\x69\x73\x65\x2E\x68\x74\x6D\x6C","\x64\x69\x73\x74\x72\x69\x63\x74\x57\x69\x73\x65","\x43\x6F\x76\x69\x64\x31\x39","\x61\x6E\x69\x6B\x65\x74\x6E\x61\x72\x76\x61\x6E\x6B\x61\x72\x2F\x48\x54\x4D\x4C\x2F\x43\x6F\x76\x69\x64\x31\x39\x2E\x68\x74\x6D\x6C","\x63\x6F\x76\x69\x64\x31\x39","\x69\x64\x6C\x65","\x74\x69\x6D\x65\x6F\x75\x74","\x69\x6E\x74\x65\x72\x76\x61\x6C","\x64\x69\x73\x61\x62\x6C\x65\x57\x61\x72\x6E\x69\x6E\x67\x73","\x63\x6F\x6E\x66\x69\x67"];define([_0xbea8[0],_0xbea8[1],_0xbea8[2],_0xbea8[3],_0xbea8[4],_0xbea8[5],_0xbea8[6],_0xbea8[7],_0xbea8[8],_0xbea8[9],_0xbea8[10],_0xbea8[11],_0xbea8[12],_0xbea8[13],_0xbea8[14],_0xbea8[15]],function(){var _0x50ebx1=angular[_0xbea8[19]](_0xbea8[16],[_0xbea8[17],_0xbea8[1],_0xbea8[2],_0xbea8[3],_0xbea8[4],_0xbea8[5],_0xbea8[6],_0xbea8[7],_0xbea8[8],_0xbea8[9],_0xbea8[18],_0xbea8[10],_0xbea8[11],_0xbea8[12],_0xbea8[13],_0xbea8[14],_0xbea8[15]]);_0x50ebx1[_0xbea8[20]]= function(){angular[_0xbea8[21]](document,[_0xbea8[16]])};_0x50ebx1[_0xbea8[52]](function(_0x50ebx2,_0x50ebx3,_0x50ebx4,_0x50ebx5,_0x50ebx6){_0x50ebx3[_0xbea8[22]]= _0xbea8[23];_0x50ebx3[_0xbea8[24]]= _0xbea8[23];_0x50ebx3[_0xbea8[25]]= navigator[_0xbea8[26]];_0x50ebx2[_0xbea8[28]](_0xbea8[27],function(){_0x50ebx3.$apply(function(){_0x50ebx3[_0xbea8[25]]= false})},false);_0x50ebx2[_0xbea8[28]](_0xbea8[25],function(){_0x50ebx3.$apply(function(){_0x50ebx3[_0xbea8[25]]= true})},false);_0x50ebx3[_0xbea8[29]]= function(){var _0x50ebx7=navigator[_0xbea8[31]][_0xbea8[30]];var _0x50ebx8={};_0x50ebx8[Connection[_0xbea8[32]]]= _0xbea8[33];_0x50ebx8[Connection[_0xbea8[34]]]= _0xbea8[35];_0x50ebx8[Connection[_0xbea8[36]]]= _0xbea8[37];_0x50ebx8[Connection[_0xbea8[38]]]= _0xbea8[39];_0x50ebx8[Connection[_0xbea8[40]]]= _0xbea8[41];_0x50ebx8[Connection[_0xbea8[42]]]= _0xbea8[43];_0x50ebx8[Connection[_0xbea8[44]]]= _0xbea8[45];_0x50ebx8[Connection[_0xbea8[46]]]= _0xbea8[47];if(_0x50ebx7!= Connection[_0xbea8[46]]){return true}else {return false}};_0x50ebx3.$on(_0xbea8[48],function(_0x50ebx9,_0x50ebxa,_0x50ebxb){_0x50ebx3[_0xbea8[22]]= _0x50ebx3[_0xbea8[24]];_0x50ebx3[_0xbea8[24]]= _0x50ebx4[_0xbea8[49]]()});if(sessionStorage[_0xbea8[50]]!= 0){_0x50ebx6[_0xbea8[51]]()}});_0x50ebx1[_0xbea8[75]](function(_0x50ebxc,_0x50ebxd,_0x50ebxe,_0x50ebxf,_0x50ebx10,_0x50ebx11,_0x50ebx12){_0x50ebxd[_0xbea8[54]](_0xbea8[53]);_0x50ebxc[_0xbea8[59]](_0xbea8[68],{url:_0xbea8[53],templateUrl:_0xbea8[69],controller:_0xbea8[70]})[_0xbea8[59]](_0xbea8[64],{url:_0xbea8[65],templateUrl:_0xbea8[66],controller:_0xbea8[67]})[_0xbea8[59]](_0xbea8[60],{url:_0xbea8[61],templateUrl:_0xbea8[62],controller:_0xbea8[63]})[_0xbea8[59]](_0xbea8[55],{url:_0xbea8[56],templateUrl:_0xbea8[57],controller:_0xbea8[58]});_0x50ebx11[_0xbea8[71]](300);_0x50ebx11[_0xbea8[72]](20);_0x50ebx12[_0xbea8[73]](20);_0x50ebx10[_0xbea8[74]]()});return _0x50ebx1})
+define(['ui-router', 'ngAnimate', 'ngSanitize', 'ui.bootstrap', 'ngMessages', 'ngMaterial', 'ngIdle', 'ngAria', 'ngTouch', 'cryptojsProvider', 'cgBusy', 'MassAutoComplete', 'btorfs.multiselect', 'ng.deviceDetector', 'reTree', 'tc.chartjs'], function () {
+
+    //defining angularjs module
+    var app = angular.module("app", ['ui.router', 'ngAnimate', 'ngSanitize', 'ui.bootstrap', 'ngMessages', 'ngMaterial', 'ngIdle', 'ngAria', 'ngTouch', 'cryptojsProvider', 'wt.responsive', 'cgBusy', 'MassAutoComplete', 'btorfs.multiselect', 'ng.deviceDetector', 'reTree','tc.chartjs']);
+ 
+    //manual bootstrap
+    app.init = function () {
+        angular.bootstrap(document, ['app']);
+    };
+     
+
+    ////////////////////////// Angular Online Offline/////////////////////////////////////////
+    app.run(function ($window, $rootScope, $location, $mdDialog, Idle) {
+
+        $rootScope.previousLocation = "";
+        $rootScope.actualLocation = "";
+
+        // Start // Uncomment it for Local host
+
+        $rootScope.online = navigator.onLine;
+        $window.addEventListener("offline", function () {
+            $rootScope.$apply(function () {
+                $rootScope.online = false;
+            });
+        }, false);
+        $window.addEventListener("online", function () {
+            $rootScope.$apply(function () {
+                $rootScope.online = true;
+            });
+        }, false);
+
+        // End //
+
+        // Start // Uncomment it for Mobile 
+        //document.addEventListener("offline", onOffline, false);
+        //function onOffline() {
+        //    //alert('You are Offline');
+        //    $rootScope.$apply(function () {
+        //        $rootScope.online = false;
+        //    });
+        //}
+        //document.addEventListener("online", onOnline, false);
+        //function onOnline() {
+        //    //alert('You are Online');
+        //    $rootScope.$apply(function () {
+        //        $rootScope.online = true;
+        //    });
+        //}
+        // End //
+
+        $rootScope.checkConnection = function () {
+            var networkState = navigator.connection.type;
+            var states = {};
+            states[Connection.UNKNOWN] = 'Unknown connection';
+            states[Connection.ETHERNET] = 'Ethernet connection';
+            states[Connection.WIFI] = 'WiFi connection';
+            states[Connection.CELL_2G] = 'Cell 2G connection';
+            states[Connection.CELL_3G] = 'Cell 3G connection';
+            states[Connection.CELL_4G] = 'Cell 4G connection';
+            states[Connection.CELL] = 'Cell generic connection';
+            states[Connection.NONE] = 'No network connection';
+            //alert('Connection type: ' + states[networkState]);
+            if (networkState != Connection.NONE) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        $rootScope.$on('$locationChangeStart', function (event, next, current) {
+            // Prevent the browser default action (Going back)
+
+            $rootScope.previousLocation = $rootScope.actualLocation;
+            $rootScope.actualLocation = $location.path();
+
+            //console.log($rootScope.previousLocation);
+            //console.log($rootScope.actualLocation);
+            //console.log(next);
+            //console.log(current);
+            //if (($rootScope.actualLocation.replace("/", "") == 'login')
+            //    && ($rootScope.previousLocation.replace("/", "") != '')) {
+            //    debugger;
+            //    if (!confirm("Are you sure you want to Logout?")) {
+            //        event.preventDefault();
+            //        return;
+            //    }
+            //    sessionStorage.setItem('UN', '');
+            //    //$rootScope.showConfirm(event);
+            //}
+            //if ((($window.sessionStorage.getItem('UN') == null) || ($window.sessionStorage.getItem('UN') == ''))
+            //    && ((($rootScope.previousLocation.replace("/", "") == 'login') && ($rootScope.actualLocation.replace("/", "home")))
+            //    || (($rootScope.previousLocation.replace("/", "")) == ($rootScope.actualLocation.replace("/", ""))))) {
+            //    event.preventDefault();
+            //    //alert('This');
+            //}
+            //alert($window.sessionStorage.getItem('UN'));
+            //alert("$rootScope.previousLocation : " + $rootScope.previousLocation);
+            //alert("$rootScope.actualLocation : " + $rootScope.actualLocation);
+        });
+
+        /* Idle Timeout */
+        if (sessionStorage.length != 0) {
+            Idle.watch();
+        }
+        /*End*/
+    });
+    //////////////////////////////////////////////////////////////////////////////////////////
+
+    //defining routes
+    app.config(function ($stateProvider, $urlRouterProvider, $locationProvider, $mdThemingProvider, $mdAriaProvider, IdleProvider, KeepaliveProvider) {
+         
+         
+        $urlRouterProvider.otherwise("/Covid19");
+
+        //$locationProvider.html5Mode(true);
+
+        $stateProvider.state("Covid19", {
+            url: "/Covid19",
+            templateUrl: 'aniketnarvankar/HTML/Covid19.html',
+            controller: 'covid19'
+        }).state("DistrictWise", {
+            url: "/DistrictWise",
+            templateUrl: 'aniketnarvankar/HTML/DistrictWise.html',
+            controller: 'districtWise'
+        }).state("worldData", {
+            url: "/worldData",
+            templateUrl: 'aniketnarvankar/HTML/World.html',
+            controller: 'worldController'
+        }).state("covidInfo", {
+            url: "/covidInfo",
+            templateUrl: 'aniketnarvankar/HTML/covidInfo.html',
+            controller: 'covidController'
+        });
+
+        /* Idle Timeout */
+        IdleProvider.idle(300);
+        IdleProvider.timeout(20);
+        KeepaliveProvider.interval(20);
+        /* End */
+
+        //$locationProvider.html5Mode(true);
+        //$locationProvider.hashPrefix('!');
+        $mdAriaProvider.disableWarnings();
+    });
+
+ 
+
+    return app;
+});
