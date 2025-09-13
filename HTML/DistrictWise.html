@@ -17,7 +17,7 @@
                             <tr style="background-color:midnightblue">
                              <th style="color:white">State Name</th>
                              <th style="color:white">Rural Hospitals</th>
-                             <th style="color:white">ruralBeds</th>
+                             <th style="color:white">RuralBeds</th>
                              <th style="color:white">Urban Hospitals</th>
                              <th style="color:white">Urban Beds</th>
                              <th style="color:white">Total Hospitals</th>
@@ -29,7 +29,7 @@
                             <tr ng-repeat="district in district |filter:{stateName:State}">
                                 <td class="info">{{district.stateName}}</td>
                                 <td class="info">{{district.ruralHospitals}}</td>
-                                <td class="info">{{district.RuralBeds}}</td>
+                                <td class="info">{{district.ruralBeds}}</td>
                                 <td class="danger">{{district.urbanHospitals}}</td>
                                 <td class="danger">{{district.urbanBeds}}</td>
                                 <td class="danger">{{district.totalHospitals}}</td>
