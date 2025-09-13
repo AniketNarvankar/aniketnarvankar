@@ -15,23 +15,27 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr style="background-color:midnightblue">
-                                <th style="color:white">State Code</th>
-                                <th style="color:white">District Name</th>
-                                <th style="color:white">Active Cases</th>
-                                <th style="color:white">Confirmed</th>
-                                <th style="color:white">Death</th>
-                                <th style="color:white">Recovered</th>
-                            </tr>
+                             <th style="color:white">State Name</th>
+                             <th style="color:white">Rural Hospitals</th>
+                             <th style="color:white">RuralBeds</th>
+                             <th style="color:white">Urban Hospitals</th>
+                             <th style="color:white">Urban Beds</th>
+                             <th style="color:white">Total Hospitals</th>
+                             <th style="color:white">Total Beds</th>
+                             <th style="color:white">Last Updated</th>
+                         </tr>
                         </thead>
                          
                             <tr ng-repeat="district in district |filter:{stateName:State}">
-                                <td class="info">{{district.stateCode}}</td>
-                                <td class="info">{{district.districtName}}</td>
-                                <td class="danger">{{district.active}}</td>
-                                <td class="danger">{{district.confirmed}}</td>
-                                <td class="danger">{{district.deceased}}</td>
-                                <td class="success">{{district.recovered}}</td>
-                            </tr>
+                                <td class="info">{{district.stateName}}</td>
+                                <td class="info">{{district.ruralHospitals}}</td>
+                                <td class="info">{{district.RuralBeds}}</td>
+                                <td class="danger">{{district.urbanHospitals}}</td>
+                                <td class="danger">{{district.urbanBeds}}</td>
+                                <td class="danger">{{district.totalHospitals}}</td>
+                                <td class="success">{{district.totalBeds}}</td>
+                                <td class="success">{{district.lastUpdated}}</td>
+                        </tr>
                          
                     </table>
                 </div>
