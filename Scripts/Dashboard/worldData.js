@@ -1,1 +1,44 @@
-  var _0x3584=["\x61\x70\x70","\x77\x6F\x72\x6C\x64\x43\x6F\x6E\x74\x72\x6F\x6C\x6C\x65\x72","\x24\x73\x63\x6F\x70\x65","\x24\x72\x6F\x6F\x74\x53\x63\x6F\x70\x65","\x24\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x24\x74\x69\x6D\x65\x6F\x75\x74","\x24\x6D\x64\x53\x69\x64\x65\x6E\x61\x76","\x24\x68\x74\x74\x70","\x24\x77\x69\x6E\x64\x6F\x77","\x24\x66\x69\x6C\x74\x65\x72","\x24\x6D\x64\x44\x69\x61\x6C\x6F\x67","\x24\x63\x72\x79\x70\x74\x6F\x6A\x73\x41\x48\x43","\x72\x65\x6C\x6F\x61\x64\x44\x61\x74\x61","\x72\x65\x6C\x6F\x61\x64","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x68\x69\x64\x65","\x77\x6F\x72\x6C\x64\x49\x6E\x66\x6F","\x47\x6C\x6F\x62\x61\x6C","\x64\x61\x74\x61","\x64\x61\x74\x61\x43\x6F\x75\x6E\x74\x72\x79\x57\x69\x73\x65","\x43\x6F\x75\x6E\x74\x72\x69\x65\x73","\x65\x72\x72\x6F\x72","\x74\x68\x65\x6E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x61\x70\x69\x2E\x63\x6F\x76\x69\x64\x31\x39\x61\x70\x69\x2E\x63\x6F\x6D\x2F\x73\x75\x6D\x6D\x61\x72\x79","\x67\x65\x74","\x62\x61\x63\x6B","\x43\x6F\x76\x69\x64\x31\x39","\x70\x61\x74\x68","\x63\x6F\x6E\x74\x72\x6F\x6C\x6C\x65\x72"];define([_0x3584[0]],function(_0x4177x1){_0x4177x1[_0x3584[28]](_0x3584[1],[_0x3584[2],_0x3584[3],_0x3584[4],_0x3584[5],_0x3584[6],_0x3584[7],_0x3584[8],_0x3584[9],_0x3584[10],_0x3584[11],_0x3584[8],function(_0x4177x2,_0x4177x3,_0x4177x4,_0x4177x5,_0x4177x6,_0x4177x7,_0x4177x8,_0x4177x9,_0x4177xa,_0x4177xb,_0x4177x8){_0x4177x2[_0x3584[12]]= function(){_0x4177x8[_0x3584[14]][_0x3584[13]]()};_0x4177x2[_0x3584[15]]= false;_0x4177x7[_0x3584[24]](_0x3584[23])[_0x3584[22]](function(_0x4177xc){_0x4177x2[_0x3584[15]]= false;_0x4177x2[_0x3584[16]]= _0x4177xc[_0x3584[18]][_0x3584[17]];_0x4177x2[_0x3584[19]]= _0x4177xc[_0x3584[18]][_0x3584[20]]},function(_0x4177xd){_0x4177x2[_0x3584[21]]= _0x4177xd;_0x4177x2[_0x3584[15]]= true});_0x4177x2[_0x3584[25]]= function(){_0x4177x4[_0x3584[27]](_0x3584[26])}}])})
+ define(['app'], function (app) {
+    app.controller("worldController", function ($scope, $location, $http,$window) {
+        $scope.reloadData = function () {
+            $window.location.reload();
+        };
+        $scope.hide = false;
+
+        $http.get("https://covid-api.com/api/reports/total").then(
+            function (response) {
+                $scope.worldInfo = {
+                    TotalConfirmed: response.data.data.confirmed,
+                    TotalDeaths: response.data.data.deaths,
+                    TotalRecovered: response.data.data.recovered
+                };
+            },
+            function (error) {
+                $scope.error = error;
+                $scope.hide = true;
+            }
+        );
+
+        $http.get("https://covid-api.com/api/reports").then(
+            function (response) {
+                $scope.hide = false;
+                $scope.dataCountryWise = response.data.data.map(function (entry) {
+                    return {
+                        Country: entry.region.name,
+                        TotalConfirmed: entry.confirmed,
+                        TotalDeaths: entry.deaths,
+                        TotalRecovered: entry.recovered
+                    };
+                });
+            },
+            function (error) {
+                $scope.error = error;
+                $scope.hide = true;
+            }
+        );
+        $scope.back = function () {
+            $location.path("Covid19");
+        };
+    });
+});
+ 
