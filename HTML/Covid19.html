@@ -2,9 +2,7 @@
 <html>
 <head>
     <title></title>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-	 
- 
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"> 
 </head>
 <body ng-controller="covid19">
     <p style="align-content:center"></p>
@@ -31,12 +29,12 @@
                             </tr>
                         </thead>
                          
-                            <tr ng-repeat="state in covid19Tracker.statewise | filter:{state: 'Total'}">
-                                <td class="info">{{state.active}}</td>
-                                <td class="info">{{state.confirmed}}</td>
-                                <td class="danger">{{state.deaths}}</td>
-                                <td class="success">{{state.recovered}}</td>
-                            </tr>
+                           <tr>
+						    <td class="info">{{covid19Tracker.total.active}}</td>
+						    <td class="info">{{covid19Tracker.total.confirmed}}</td>
+						    <td class="danger">{{covid19Tracker.total.deaths}}</td>
+						    <td class="success">{{covid19Tracker.total.recovered}}</td>
+							</tr>
                          
                     </table>
                 </div>
@@ -44,12 +42,12 @@
         </div>
     </div>
     <br />
-    <div ng-hide="hide" ng-repeat="state in covid19Tracker.statewise | filter:{state: 'Total'}">
-        <b style="color:white">Last Updated On : {{state.lastupdatedtime}}</b>
-    </div>
-    <br />
+   	<br />
+    <b style="color:white">Last Updated On : {{covid19Tracker.lastRefreshed}}</b>
+	<br />
+	<br />
     <div ng-hide="hide">
-        <b style="color:white">Click on Each Row to get State Data</b>
+        <b style="color:white">Click on Each Row to get State Wise Health Capacity</b>
     </div>
     <br />
     <div class="row" ng-hide="hide">
@@ -67,13 +65,13 @@
                         </tr>
                     </thead>
 
-                    <tr ng-repeat="state in covid19Tracker.statewise | filter:{state: '!Total'}" ng-click="getData(state.state)">
-                        <td class="success">{{state.state}}</td>
-                        <td class="info">{{state.active}}</td>
-                        <td class="info">{{state.confirmed}}</td>
-                        <td class="danger">{{state.deaths}}</td>
-                        <td class="success">{{state.recovered}}</td>
-                    <tr>
+                  <tr ng-repeat="state in covid19Tracker.statewise | filter:{state: '!Total'}" ng-click="getData(state.state)">
+				     <td class="success">{{state.state}}</td>
+				     <td class="info">{{state.active}}</td>
+				     <td class="info">{{state.confirmed}}</td>
+				     <td class="danger">{{state.deaths}}</td>
+				     <td class="success">{{state.recovered}}</td>
+ 				<tr>
                 </table>
             </div>
        </div>
@@ -92,7 +90,7 @@
   </div>
     <div class="container" ng-hide="hide">
         <h1 class="h1" style="color:white">
-        Credits @ <a href="https://api.covid19india.org/" class="button" style="width:50px;height:50px;color:white" target="_blank">Covid 19 India</a> 
+        Credits @ <a href="https://api.rootnet.in/" class="button" style="width:50px;height:50px;color:white" target="_blank">Covid 19 India</a> 
         </h1>
         <br />
         <div style="text-align:center">
